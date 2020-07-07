@@ -2,10 +2,19 @@
 
 **Live demo** https://ebuddj.github.io/2020-covid19/
 
-## Project title
+## Number of confirmed Covid-19 cases per continent
+
+Chinese authorities informed the WHO on January 9 that a new virus was the cause of multiple pneumonia cases in the country, sounding the alarm to what became the COVID-19 pandemic.
+
+The graphs show the number of confirmed Covid-19 cases per continent:
+1) [First graph shows the cumulative number of cases](https://ebuddj.github.io/2020-covid19/#data=cumulative)
+2) [Second graph shows the number of new daily cases in a 14 day period](https://ebuddj.github.io/2020-covid19/#data=daily)
+
+The colors for continents have been taken from from [this map](https://commons.wikimedia.org/wiki/File:Continents_by_colour.png).
 
 **Sources**
-* []()
+* [OurWorldInData](https://ourworldindata.org/coronavirus)
+* [Wikipedia](https://commons.wikimedia.org/wiki/File:Continents_by_colour.png)
 
 **EBU links**
 * []()
