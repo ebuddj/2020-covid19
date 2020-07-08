@@ -12,7 +12,7 @@ The graphs show the number of confirmed Covid-19 cases per continent:
 
 The graph shows the data on a linear scale and the numbers are absolute.
 
-The colors for continents have been taken from from [this map](https://commons.wikimedia.org/wiki/File:Continents_by_colour.png). The continents appear in the following order: Asia, Europe, North America, South America, Africa, Oceania which resembles the how the outbreak spread chronologically. 
+The colors for continents have been taken from from [this map](https://commons.wikimedia.org/wiki/File:Continents_by_colour.png). The continents appear in the following order: Asia, Europe, North America, South America, Africa, Oceania which resembles how the outbreak spread chronologically. 
 
 Data is between 31st January 2020 and 6th July 2020.
 
