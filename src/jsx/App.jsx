@@ -76,7 +76,8 @@ class App extends Component {
             fontStyle:'bold'
           },
           onClick:false,
-          position:'top'
+          position:'top',
+          reverse:true
         },
         responsive:true,
         scales:{
