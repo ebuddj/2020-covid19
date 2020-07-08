@@ -87,7 +87,7 @@ class App extends Component {
             ticks: {
               autoSkip:false,
               callback: function(value, index, values) {
-                if (value.split('-')[2] === '15') {
+                if (value.split('-')[2] === '16') {
                   return monthNames[value.split('-')[1]];
                 }
                 else if (value.split('-')[2] === '01') {
