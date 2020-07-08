@@ -150,6 +150,7 @@ class App extends Component {
     this.loadData(line_chart, filename);
   }
   drawLabels(t, filename) {
+    // https://stackoverflow.com/questions/49386612/how-to-add-text-at-end-of-each-line-in-charts-js
     ctx.save();
     ctx.font = Chart.helpers.fontString(12, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
     ctx.textBaseline = 'bottom'; 
