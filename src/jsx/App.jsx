@@ -109,7 +109,7 @@ class App extends Component {
               fontColor:'#444',
               fontSize:16,
               fontStyle:'bold',
-              suggestedMax:(filename === 'cumulative') ? 3500000 : 800000,
+              suggestedMax:(filename === 'cumulative') ? 3500000 : 60000,
               suggestedMin:0
             },
             type:'linear'

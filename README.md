@@ -8,9 +8,13 @@ Chinese authorities informed the WHO on January 9 that a new virus was the cause
 
 The graphs show the number of confirmed Covid-19 cases per continent:
 1) [First graph shows the cumulative number of cases](https://ebuddj.github.io/2020-covid19/#data=cumulative)
-2) [Second graph shows the number of new daily cases in a 14 day period](https://ebuddj.github.io/2020-covid19/#data=daily)
+2) [Second graph shows the average number of new daily cases in a 14 day period](https://ebuddj.github.io/2020-covid19/#data=daily)
+
+The graph shows the data on a linear scale and the numbers are absolute.
 
 The colors for continents have been taken from from [this map](https://commons.wikimedia.org/wiki/File:Continents_by_colour.png).
+
+Data is between 31st January 2020 and 6th July 2020.
 
 **Sources**
 * [OurWorldInData](https://ourworldindata.org/coronavirus)
