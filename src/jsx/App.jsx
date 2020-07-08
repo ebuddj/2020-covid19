@@ -11,10 +11,10 @@ const numberOfContinents = 6,
       dataSets = [
         {backgroundColor:'',borderColor:'#f63c00',borderWidth:7,data:[],fill:false,label:'Asia',radius:0,order:55,yOffsetcumulative:27.5,yOffsetdaily:22},
         {backgroundColor:
-          '',borderColor:'#c30000',borderWidth:7,data:[],fill:false,label:'Europe',radius:0,order:54,yOffsetcumulative:34.5,yOffsetdaily:79},
+          '',borderColor:'#c30000',borderWidth:7,data:[],fill:false,label:'Europe',radius:0,order:54,yOffsetcumulative:34.5,yOffsetdaily:75.5},
         {backgroundColor:'',borderColor:'#00ce00',borderWidth:7,data:[],fill:false,label:'North America',radius:0,order:53,yOffsetcumulative:7.5,yOffsetdaily:12.5},
         {backgroundColor:'',borderColor:'#008100',borderWidth:7,data:[],fill:false,label:'South America',radius:0,order:52,yOffsetcumulative:31,yOffsetdaily:17},
-        {backgroundColor:'',borderColor:'#ffd600',borderWidth:7,data:[],fill:false,label:'Africa',radius:0,order:51,yOffsetcumulative:82.5,yOffsetdaily:75.5},
+        {backgroundColor:'',borderColor:'#ffd600',borderWidth:7,data:[],fill:false,label:'Africa',radius:0,order:51,yOffsetcumulative:82.5,yOffsetdaily:79},
         {backgroundColor:'',borderColor:'#c23d80',borderWidth:7,data:[],fill:false,label:'Oceania',radius:0,order:50,yOffsetcumulative:94.5,yOffsetdaily:94.5}];
 
 let interval,
