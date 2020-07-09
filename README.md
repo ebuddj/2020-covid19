@@ -21,7 +21,7 @@ Data is between 31st January 2020 and 6th July 2020.
 * [Wikipedia](https://commons.wikimedia.org/wiki/File:Continents_by_colour.png)
 
 **EBU links**
-* []()
+* [News Exchange](https://news-exchange.ebu.ch/item_detail/fe25e1bca9ba0dd57f6deedad3477a09/2020_21031183)
 
 **Used by**
 * []()
