@@ -2,7 +2,7 @@
 
 **Live demo** https://ebuddj.github.io/2020-covid19/
 
-## Number of confirmed Covid-19 cases per continent
+## Number of confirmed Covid-19 cases per continent (EBU)
 
 Chinese authorities informed the WHO on January 9 that a new virus was the cause of multiple pneumonia cases in the country, sounding the alarm to what became the COVID-19 pandemic.
 
