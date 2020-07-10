@@ -6,20 +6,13 @@ import * as d3 from 'd3';
 
 // https://www.chartjs.org/
 import Chart from 'chart.js';
-const numberOfContinents = 6,
-      monthNames = {'01': 'January','02': 'February','03': 'March','04': 'April','05': 'May','06': 'June','07': 'July'},
-      dataSets = [
-        {backgroundColor:'',borderColor:'#f63c00',borderWidth:7,data:[],fill:false,label:'Asia',radius:0,order:55,yOffsetcumulative:27.5,yOffsetdaily:22},
-        {backgroundColor:
-          '',borderColor:'#c30000',borderWidth:7,data:[],fill:false,label:'Europe',radius:0,order:54,yOffsetcumulative:34.5,yOffsetdaily:75.5},
-        {backgroundColor:'',borderColor:'#00ce00',borderWidth:7,data:[],fill:false,label:'North America',radius:0,order:53,yOffsetcumulative:7.5,yOffsetdaily:12.5},
-        {backgroundColor:'',borderColor:'#008100',borderWidth:7,data:[],fill:false,label:'South America',radius:0,order:52,yOffsetcumulative:31,yOffsetdaily:17},
-        {backgroundColor:'',borderColor:'#ffd600',borderWidth:7,data:[],fill:false,label:'Africa',radius:0,order:51,yOffsetcumulative:82.5,yOffsetdaily:79},
-        {backgroundColor:'',borderColor:'#c23d80',borderWidth:7,data:[],fill:false,label:'Oceania',radius:0,order:50,yOffsetcumulative:94.5,yOffsetdaily:94.5}];
+const monthNames = {'01': 'January','02': 'February','03': 'March','04': 'April','05': 'May','06': 'June','07': 'July'};
 
-let interval,
+let dataSets,
+    interval,
     ctx,
-    line_chart;
+    line_chart,
+    suggestedMax;
 
 class App extends Component {
   constructor(props) {
@@ -34,6 +27,26 @@ class App extends Component {
   }
   componentDidMount() {
     const filename = this.getHashValue('data') ? this.getHashValue('data') : 'cumulative';
+
+    if (filename.search('scandinavia')) {
+      suggestedMax = (filename.search('cumulative') > -1) ? 6000 : 200,
+      dataSets = [
+        {backgroundColor:'',borderColor:'#f63c00',borderWidth:7,data:[],fill:false,label:'Denmark',radius:0,order:55,yOffsetcumulative_scandinavia:85.5,yOffsetdaily_scandinavia:90},
+        {backgroundColor:'',borderColor:'#00ce00',borderWidth:7,data:[],fill:false,label:'Finland',radius:0,order:54,yOffsetcumulative_scandinavia:89,yOffsetdaily_scandinavia:95},
+        {backgroundColor:'',borderColor:'#c30000',borderWidth:7,data:[],fill:false,label:'Norway',radius:0,order:53,yOffsetcumulative_scandinavia:92,yOffsetdaily_scandinavia:93},
+        {backgroundColor:'',borderColor:'#008100',borderWidth:7,data:[],fill:false,label:'Sweden',radius:0,order:52,yOffsetcumulative_scandinavia:14,yOffsetdaily_scandinavia:30}];
+    }
+    else {
+      suggestedMax = (filename.search('cumulative') > -1) ? 3500000 : 60000,
+      dataSets = [
+        {backgroundColor:'',borderColor:'#f63c00',borderWidth:7,data:[],fill:false,label:'Asia',radius:0,order:55,yOffsetcumulative:27.5,yOffsetdaily:22},
+        {backgroundColor:
+          '',borderColor:'#c30000',borderWidth:7,data:[],fill:false,label:'Europe',radius:0,order:54,yOffsetcumulative:34.5,yOffsetdaily:75.5},
+        {backgroundColor:'',borderColor:'#00ce00',borderWidth:7,data:[],fill:false,label:'North America',radius:0,order:53,yOffsetcumulative:7.5,yOffsetdaily:12.5},
+        {backgroundColor:'',borderColor:'#008100',borderWidth:7,data:[],fill:false,label:'South America',radius:0,order:52,yOffsetcumulative:31,yOffsetdaily:17},
+        {backgroundColor:'',borderColor:'#ffd600',borderWidth:7,data:[],fill:false,label:'Africa',radius:0,order:51,yOffsetcumulative:82.5,yOffsetdaily:79},
+        {backgroundColor:'',borderColor:'#c23d80',borderWidth:7,data:[],fill:false,label:'Oceania',radius:0,order:50,yOffsetcumulative:94.5,yOffsetdaily:94.5}];
+    }
     setTimeout(() => {
       this.createLineChart(16/9, filename);
     }, 1000);
@@ -127,7 +140,7 @@ class App extends Component {
               fontColor:'#444',
               fontSize:16,
               fontStyle:'bold',
-              suggestedMax:(filename === 'cumulative') ? 3500000 : 60000,
+              suggestedMax:suggestedMax,
               suggestedMin:0
             },
             type:'linear'
@@ -180,7 +193,7 @@ class App extends Component {
     });
   }
   addData(data, current_continent_idx, line_chart, filename) {
-      // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
     let chart_data = Object.values(data[current_continent_idx]).slice(1);
     chart_data.pop();
     let idx = 0;
@@ -195,7 +208,7 @@ class App extends Component {
         clearInterval(interval);
         setTimeout(() => {
           current_continent_idx++;
-          if (current_continent_idx < numberOfContinents) {
+          if (current_continent_idx < dataSets.length) {
             this.addData(data, current_continent_idx, line_chart, filename)
           }
           else {
