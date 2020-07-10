@@ -9,6 +9,8 @@ Chinese authorities informed the WHO on January 9 that a new virus was the cause
 The graphs show the number of confirmed Covid-19 cases per continent:
 1) [First graph shows the cumulative number of cases](https://ebuddj.github.io/2020-covid19/#data=cumulative)
 2) [Second graph shows the average number of new daily cases in a 14 day period](https://ebuddj.github.io/2020-covid19/#data=daily)
+3) [Third graph the cumulative number of deaths in four Nordic countries](https://ebuddj.github.io/2020-covid19/#data=cumulative_scandinavia)
+4) [Fourth graph shows the average number of new daily cases in a 14 day period in four Nordic countries](https://ebuddj.github.io/2020-covid19/#data=daily_scandinavia)
 
 The graph shows the data on a linear scale and the numbers are absolute.
 
