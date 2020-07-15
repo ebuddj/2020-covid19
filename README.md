@@ -26,7 +26,8 @@ Data is between 31st January 2020 and 13th July 2020.
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/fe25e1bca9ba0dd57f6deedad3477a09/2020_21031183), 2020-07-09
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9f9ce24ce897c792fbe2e4a179b2de81/2020_21032251), 2020-07-15
 * [News Exchange](https://news-exchange.ebu.ch/item_detail/9f9ce24ce897c792fbe2e4a179b2de81/2020_21032081), 2020-07-15
-* [Social Newswire](https://www.evnsocialnewswire.ch/data/coronavirus-animation-shows-the-number-of-confirmed-covid-19-cases-per-continent-in-the-last-six-months-animation/)
+* [Social Newswire](https://www.evnsocialnewswire.ch/data/coronavirus-animation-shows-the-number-of-confirmed-covid-19-cases-per-continent-in-the-last-six-months-animation/), 2020-07-09
+* [Social Newswire](https://www.evnsocialnewswire.ch/data/coronavirus-animation-shows-number-of-confirmed-covid-19-cases-in-selected-nordic-countries-in-the-last-six-months-animation/), 2020-07-15
 
 **Used by**
 * []()
