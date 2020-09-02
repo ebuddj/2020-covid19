@@ -27,7 +27,6 @@ class App extends Component {
   }
   componentDidMount() {
     const filename = this.getHashValue('data') ? this.getHashValue('data') : 'cumulative';
-    console.log(filename)
     if (filename.search('scandinavia') > -1) {
       suggestedMax = (filename.search('cumulative') > -1) ? 6000 : 200,
       dataSets = [
