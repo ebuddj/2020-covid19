@@ -30,8 +30,8 @@ Data is between 31st January 2020 and 13th July 2020.
 * [Social Newswire](https://www.evnsocialnewswire.ch/data/coronavirus-animation-shows-number-of-confirmed-covid-19-cases-in-selected-nordic-countries-in-the-last-six-months-animation/), 2020-07-15
 
 **Used by**
-* CT/Czech on CT1 Czech
-* CT/Czech on CT24
+* CT/Czechia on CT1 Czech
+* CT/Czechia on CT24
 
 ## How to use
 
